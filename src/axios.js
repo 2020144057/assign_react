@@ -8,7 +8,7 @@ async function axiosCore(url) {
         baseURL: 'http://13.125.229.199:8080',
         withCredentials: false,
     })
-    return response.json
+    return response.data
 }
 
 export async function getBeerByName(name) {
@@ -16,5 +16,14 @@ export async function getBeerByName(name) {
 }
 
 export async function getBeers() {
-    return await axiosCore(`/beers?count=3`)
+
+    // const promise = await axios({
+    //     url: `/beers?count=3`,
+    //     method: "GET",
+    //     headers: {"Access-Control-Allow-Origin": "*"},
+    //     baseURL: 'http://13.125.229.199:8080',
+    //     withCredentials: false,
+    // }).then(response => response.data)
+    
+    
 }

@@ -4,6 +4,7 @@ import { ListHeader } from '../components/ListHeader'
 import { OptionButton } from '../components/OptionButton'
 
 export function ForeignBeerList() {
+    
     return (
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <ListHeader />

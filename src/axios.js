@@ -15,6 +15,6 @@ export async function getBeerByName(name) {
     return await axiosCore(`/beer?name=${name}`)
 }
 
-export function getBeers() {
-    return axiosCore(`/beers?count=3`)
+export async function getBeers() {
+    return await axiosCore(`/beers?count=3`)
 }

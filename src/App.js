@@ -1,29 +1,31 @@
-import './App.css';
 import { getBeerByName, getBeers } from './axios';
-
+import { MainButton } from './components/MainButton/index.jsx'
 function App() {
-
+  function buttonHandler(route) {
+    document.location.href = route
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src='https://lh5.googleusercontent.com/xPKl3x_TAzJY6uTTW3q1Y0K50mhdcKi0T81ut5sanMiHJ7DIz_QB2deGILSv5xzq0iJ6stsHB-NI2F6R45MHychFUNfFiNGuVMrn08rgEBxZYtMtq7eBhvIAFDFbsJZ0aax0amkDY2G_dTO4Fw' /> */}
-        <button onClick={() => {
-          console.log(getBeers());
-        }} />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{height: "100vh", display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center'}}>
+      <MainButton
+        onClick={() => {buttonHandler("/list/domestic")}}
+        color={"#3AC8D6"}
+        message={"맥주 찾아보기"} 
+      />
+      <MainButton
+        onClick={() => {buttonHandler("/camera")}}
+        color={"#813AD6"}
+        message={"맥주 찍어보기"} 
+      />
     </div>
   );
 }
+
+/**
+ * #43FA88
+ * #3AC8D6
+ * #4C72ED
+ * #813AD6
+ * #FA42C7
+ */
 
 export default App;

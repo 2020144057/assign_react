@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import queryString from "query-string";
 import { useLocation } from 'react-router-dom';
-import axios from 'axios';
 
 export function BeerDetail() {
     const location = useLocation()

@@ -26,7 +26,6 @@ export function DomesticBeerList() {
                     withCredentials: false,
                 }).then(response => response.data)
                 .then(array => setBeers(array))
-        
                 isLazy = true
             }, 1000)
         }

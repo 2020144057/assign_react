@@ -6,6 +6,7 @@ import { BeerDetail } from './pages/BeerDetail';
 import { BeerCamera } from './pages/BeerCamera';
 import { DomesticBeerList } from './pages/DomesticBeerList';
 import { ForeignBeerList } from './pages/ForeignBeerList';
+import { ForeignBeerDetail } from './pages/ForeignBeerDetail';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
         <Route path='/list/domestic' element={<DomesticBeerList/>} />
         <Route path='/list/foreign' element={<ForeignBeerList />} />
         <Route path='/detail' element={<BeerDetail/>} />
+        <Route path='/detail/foreign' element={<ForeignBeerDetail/>} />
         <Route path='/camera' element={<BeerCamera/>} />
       </Routes>
     </React.StrictMode>

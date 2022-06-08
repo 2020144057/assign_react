@@ -29,7 +29,7 @@ export function ForeignBeerList() {
             <div style={{display: 'flex', flexDirection: 'column', width: '100%', height: 'fit-content', alignItems: 'center'}}>
                 {
                     beers.map(item => {
-                        return <ForeignBeerItem image={item.image_url}/>
+                        return <ForeignBeerItem id={item.id} name={item.name} tag={item.tagline} des={item.description} image={item.image_url} rate={item.abv} food_pairing={item.food_pairing} />
                     })
                 }
             </div>

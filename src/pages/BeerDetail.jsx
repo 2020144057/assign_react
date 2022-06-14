@@ -9,7 +9,7 @@ export function BeerDetail() {
 
     return (
         <div style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-            <img src={params.image} width={'50%'} height={'50%'} />
+            <img src={params.image} width={'400px'} height={'500px'} />
             <p style={{fontSize: '50px', fontWeight: '600'}}>{params.title}</p>
             <p style={{fontSize: '30px'}}>{params.des}</p>
             <p style={{fontSize: '25px'}}>{params.rate}</p>

@@ -10,7 +10,7 @@ export function ForeignBeerDetail() {
 
     return (
         <div style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-            <img src={params.image} width={'10%'} height={'700px'} />
+            <img src={params.image} width={'200px'} height={'500px'} />
             <p style={{fontSize: '50px', fontWeight: '600'}}>{params.name}</p>
             <p style={{fontSize: '30px'}}>{params.tag}</p>
             <p style={{fontSize: '30px'}}>Description</p>
